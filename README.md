@@ -18,7 +18,7 @@ A modern status page application built with Next.js and Express.js that allows y
 - **Backend**: Express.js, Node.js
 - **Database**: MongoDB
 - **Authentication**: JWT
-- **Deployment**: Vercel/Netlify (Frontend), Heroku/AWS (Backend)
+- **Deployment**: Vercel
 
 ## Prerequisites
 
@@ -100,59 +100,6 @@ NODE_ENV=development
    - Frontend: http://localhost:3000
    - Backend API: http://localhost:5001
 
-## Production Deployment
-
-### Frontend Deployment
-
-1. Build the application:
-   ```bash
-   cd Frontend
-   npm run build
-   ```
-
-2. Deploy to your preferred platform (Vercel recommended):
-   ```bash
-   # For Vercel
-   vercel
-   ```
-
-3. Set production environment variables in your hosting platform:
-   - `NEXT_PUBLIC_API_URL`: Your production API URL
-   - `NEXT_PUBLIC_MONGODB_URI`: Production MongoDB URI
-   - `NEXT_PUBLIC_MONGODB_DB`: Production database name
-   - `NEXT_PUBLIC_JWT_SECRET`: Production JWT secret
-
-### Backend Deployment
-
-1. Prepare the backend:
-   ```bash
-   cd Backend
-   npm install --production
-   ```
-
-2. Deploy to your preferred platform (Heroku recommended):
-   ```bash
-   # For Heroku
-   heroku create
-   git push heroku main
-   ```
-
-3. Set production environment variables:
-   ```bash
-   heroku config:set MONGODB_URI=your-production-mongodb-uri
-   heroku config:set JWT_SECRET=your-production-jwt-secret
-   heroku config:set NODE_ENV=production
-   ```
-
-## Security Considerations
-
-- Use HTTPS in production
-- Keep your JWT secret secure
-- Use environment variables for sensitive data
-- Implement rate limiting
-- Set up proper CORS configuration
-- Use secure cookie settings
-
 ## API Documentation
 
 ### Components API
@@ -176,7 +123,3 @@ NODE_ENV=development
 3. Commit your changes (`git commit -m 'Add some amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
