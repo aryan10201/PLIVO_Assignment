@@ -46,10 +46,10 @@ A modern status page application built with Next.js and Express.js that allows y
 ### Frontend (.env.local)
 
 ```env
-NEXT_PUBLIC_API_URL=http://localhost:5001
-NEXT_PUBLIC_MONGODB_URI=mongodb://localhost:27017/status-page
-NEXT_PUBLIC_MONGODB_DB=status-page
-NEXT_PUBLIC_JWT_SECRET=your-secret-key-here
+API_URL=http://localhost:5001
+MONGODB_URI=mongodb://localhost:27017/status-page
+MONGODB_DB=status-page
+JWT_SECRET=your-secret-key-here
 ```
 
 ### Backend (.env)
